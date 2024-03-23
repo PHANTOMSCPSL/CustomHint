@@ -7,7 +7,7 @@ namespace CustomHint
 
     public class Plugin : Plugin<Config>
     {
-        public override string Author => "Treaxy/Epes Patos";
+        public override string Author => "Greyzer";
 
         public override string Name => "CustomHint";
 
