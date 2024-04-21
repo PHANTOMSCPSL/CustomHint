@@ -37,14 +37,15 @@ namespace CustomHint
         
         public IEnumerator<float> cor()
         {
-            for (;;)
+            while (true)
             {
                 {
                     string HintMessage = Plugin.Instance.Config.Hint.Replace("%tps%", Server.Tps.ToString())
                         .Replace("{MinPlayers}", Server.PlayerCount.ToString())
                         .Replace("{MaxPlayers}", Server.MaxPlayerCount.ToString())
                         .Replace("{Minutes}", Round.ElapsedTime.Minutes.ToString())
-                        .Replace("{Seconds}", Round.ElapsedTime.Seconds.ToString()).Replace("%NameServer%", Server.Name)
+                        .Replace("{Seconds}", Round.ElapsedTime.Seconds.ToString())
+                        .Replace("%NameServer%", Server.Name)
                         .Replace("{FF}", Server.FriendlyFire.ToString())
                         .Replace("{ServerName}", Server.Name)
                         .Replace("{SCPs}", Round.SurvivingSCPs.ToString())
